@@ -10,7 +10,7 @@ let item = "";
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
-let btn3 = document.getElementById("btn4");
+let btn4 = document.getElementById("btn4");
 
 btn1.addEventListener("click", function(){
 	console.log("new")
@@ -52,7 +52,7 @@ btn4.addEventListener("click", function(){
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали Навсегда");
-		item = "3";
+		item = "4";
 		tg.MainButton.show();
 	}
 });
