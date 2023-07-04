@@ -10,6 +10,7 @@ let item = "";
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
+let btn3 = document.getElementById("btn4");
 
 btn1.addEventListener("click", function(){
 	console.log("new")
@@ -17,7 +18,7 @@ btn1.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 1!");
+		tg.MainButton.setText("Вы выбрали Тестовый период!");
 		item = "1";
 		tg.MainButton.show();
 	}
@@ -28,7 +29,7 @@ btn2.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 2!");
+		tg.MainButton.setText("Вы выбрали 1 Неделя!");
 		item = "2";
 		tg.MainButton.show();
 	}
@@ -39,7 +40,18 @@ btn3.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 3!");
+		tg.MainButton.setText("Вы выбрали Год!");
+		item = "3";
+		tg.MainButton.show();
+	}
+});
+
+btn4.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Вы выбрали Навсегда");
 		item = "3";
 		tg.MainButton.show();
 	}
