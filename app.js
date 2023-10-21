@@ -29,7 +29,7 @@ btn2.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали 1 Неделя!");
+		tg.MainButton.setText("Вы выбрали 1 Месяц!");
 		item = "2";
 		tg.MainButton.show();
 	}
